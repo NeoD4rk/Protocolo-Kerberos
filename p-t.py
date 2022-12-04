@@ -1,5 +1,5 @@
 ##############################################################
-# Protocolo Kerberos - Parte TTP
+# Protocolo Kerberos - TTP
 ##############################################################
 
 from funciones_aes import *
