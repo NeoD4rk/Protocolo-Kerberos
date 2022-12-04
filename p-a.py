@@ -1,7 +1,5 @@
 ##############################################################
-# Autor: Daniel Moreno Leon     DNI: 49093324P
-# Asignatura: Seguridad de la Informacion
-# Grupo: 3B Ingeniera Informatica (Subgrupo D de practicas)
+# Protocolo Kerberos - Alice
 ##############################################################
 
 from funciones_aes import *
@@ -173,7 +171,7 @@ else:
 ############################################
 
 # Preparamos el mensaje para enviar a Bob con mi DNI
-mensaje = "49093324P"
+mensaje = "Lo primero"
 jStr = json.dumps(mensaje)
 
 # Volvemos a iniciar el engine de AES para la clave KAB
