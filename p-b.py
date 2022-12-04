@@ -168,7 +168,7 @@ DNI = json.loads(json_recibido)
 ############################################
 
 # Preparamos el mensaje para enviar a Bob con mis apellidos
-mensaje = "Moreno Leon"
+mensaje = "Buenos dias"
 jStr = json.dumps(mensaje)
 
 # Volvemos a iniciar el engine de AES para la clave KAB
