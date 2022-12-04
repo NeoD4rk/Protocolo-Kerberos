@@ -5,13 +5,6 @@ def crear_AESKey():
     """Devuelve un número aleatorio de 16 bytes - 128 bits"""
     return get_random_bytes(16)
 
-"""
-En esta librería, AES GCM funciona de la misma forma para el emisor y para el receptor (se utiliza iniciarAES_GCM). 
-Esto es así porque las entidades únicamente se intercambian un mensaje.
-Sin embargo, si tratásemos de hacer el paso 7 con esta forma de hacer las cosas, ¡tendríamos un error!
-¿Por qué? Revisa la documentación de pycryptodome y mira que es realmente el parámetro aes_cifrado.nonce...
-"""
-
 def iniciarAES_GCM(key_16):
     """Inicia el engine de cifrado AES CTR"""
     nonce_16 = get_random_bytes(16)
@@ -33,10 +26,6 @@ def descifrarAES_GCM(key_16, nonce_16, datos, mac):
         return datos_claro
     except (ValueError, KeyError) as e:
         return False
-        
-"""
-Para permitir que se envíen más mensajes en un mismo canal, para los pasos 5-7 utilizaremos esta API.
-"""
 
 def iniciarAES_CTR_cifrado(key_16):
     """Inicia el engine de cifrado AES CTR"""
