@@ -1,7 +1,5 @@
 ##############################################################
-# Autor: Daniel Moreno Leon     DNI: 49093324P
-# Asignatura: Seguridad de la Informacion
-# Grupo: 3B Ingeniera Informatica (Subgrupo D de practicas)
+# Protocolo Kerberos - BOB
 ##############################################################
 
 from funciones_aes import *
@@ -12,7 +10,7 @@ import json
 
 ##########################################
 # Paso 0: Inicializacion 
-# Crear claves privada y publica de Alice
+# Crear claves privada y publica de Bob
 ##########################################
 
 # Creamos las claves y guardamos la privada
