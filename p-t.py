@@ -1,7 +1,5 @@
 ##############################################################
-# Autor: Daniel Moreno Leon     DNI: 49093324P
-# Asignatura: Seguridad de la Informacion
-# Grupo: 3B Ingeniera Informatica (Subgrupo D de practicas)
+# Protocolo Kerberos - Parte TTP
 ##############################################################
 
 from funciones_aes import *
